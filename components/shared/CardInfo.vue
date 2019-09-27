@@ -49,6 +49,7 @@ export default {
         align-items: center
         text-align: center
         max-width: 242px
+        margin: auto
         // height: 355px
         margin-bottom: 70px
 
