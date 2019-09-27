@@ -1,5 +1,5 @@
 {
-  "name": "library-devlopment",
+  "name": "library-development",
   "version": "1.0.0",
   "description": "Library with tools to development",
   "author": "Igor Hernandez",
@@ -11,8 +11,16 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.22.9",
+    "sass-loader": "^7.1.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {}
 }
