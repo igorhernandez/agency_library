@@ -52,7 +52,6 @@ export default {
     .section-03
         max-width: 1024px
         margin: auto
-        padding: 75px 0
         align-items: center
 
         @media screen and ( min-width: 990px)
@@ -68,7 +67,7 @@ export default {
             padding: 15px
           h2
             font-weight: bold
-            color: $black
+            color: $white
             line-height: 1.4em
             @media screen and ( min-width: 990px )
               font-size: 2.5em

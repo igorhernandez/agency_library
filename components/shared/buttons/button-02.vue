@@ -19,11 +19,11 @@ export default {
         width: 100%
         height: 100%
         border: 2px solid transparent
-        background-color: $text
+        background-color: $white
         font-size: .9em
         display: grid
         align-items: center
-        color: $white
+        color: $black
         padding: 14px
         box-sizing: border-box
         border-radius: 10px

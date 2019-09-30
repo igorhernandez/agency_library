@@ -1,9 +1,8 @@
-<template>
-  <div>
-    <nuxt />
-  </div>
+<template lang="pug">
+  div 
+    //- menu
+    nuxt
 </template>
-
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
