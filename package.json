@@ -20,7 +20,9 @@
     "pug-plain-loader": "^1.0.0",
     "sass": "^1.22.9",
     "sass-loader": "^7.1.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "v-money": "^0.8.1",
+    "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {}
 }

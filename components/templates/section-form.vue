@@ -1,15 +1,16 @@
 <template lang="pug">
-    div.color          
-        div.section-04
-            figure
-                img( :src="images", alt="Mockup - 03").class
-            section
-                h2 
-                    | {{ title }}
+    div.section-07
+        figure
+            img( :src="images", alt="Mockup - 03").class
+        section
+            h2 
+                | {{ title }}
 
-                p {{ describe }}
-                div.btn-zone
-                    button-01( :text="buttonText" @clickButton="")        
+            div.fields-zone
+                input-01( v-for="field, index in fields" :key="field.id" :field="field")
+
+            div.btn-zone
+                button-01( :text="buttonText" @clickButton="")
 </template>
 <script>
 
@@ -22,16 +23,16 @@ export default {
                 return "Lorem Ipsum is dolor"
             }
         },
-        describe: {
+        buttonText: {
             type: String,
             default: () => {
                 return "Lorem Ipsum is dolor"
             }
         },
-        buttonText: {
-            type: String,
-            default: () => {
-                return "Lorem Ipsum is dolor"
+        fields: {
+            type: Array,
+            default:() => {
+                return []
             }
         }
     },
@@ -39,16 +40,14 @@ export default {
 </script>
 <style lang="sass" scoped>
     
-    .color
+    .section-07
         font-family: $font
         background-color: $white
-        background-image: url('/img/pattern-azul.svg')
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed
         padding: 30px 0
 
-    .section-04
         max-width: 1024px
         margin: auto
         align-items: center
@@ -68,20 +67,16 @@ export default {
                 font-weight: bold
                 color: $blue
                 line-height: 1.4em
+                margin-bottom: 20px
                 @media screen and ( min-width: 990px )
                     font-size: 2.5em
                 @media screen and ( max-width: 989px )
                     font-size: 2.4em
                 
-            p
-                color: $darkgray
-                margin: 30px 0
-                font-weight: 100
-                line-height: 1.6em
-                @media screen and ( min-width: 990px )
-                    font-size: 1.1em
-                @media screen and ( max-width: 989px )
-                    font-size: 1em
+            .fields-zone
+                background-color: #ddd
+                padding: 20px
+                margin-bottom: 40px
                 
                 
         figure

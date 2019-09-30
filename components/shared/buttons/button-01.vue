@@ -1,7 +1,5 @@
 <template lang="pug">
     button( v-if="!link" @click.prevent="$emit('clickButton')").btn
-        span {{ text }}   
-    nuxt-link( v-else-if="interno" :to="linkI8n(link)" ).btn.link
         span {{ text }}  
     a( v-else :href="link" target="_blank").btn.link
         span {{ text }} 
@@ -9,12 +7,7 @@
 
 <script>
 export default {
-    props:["text", "link", "interno"],
-    methods:{
-        linkI8n(path){
-            return this.localePath(path)
-        }
-    }
+    props:["text", "link", "interno"]
 }
 </script>
 
