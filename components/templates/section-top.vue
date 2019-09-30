@@ -1,15 +1,14 @@
-<template lang="pug">
-    div.color          
-        div.section-04
-            figure
-                img( :src="images", alt="Mockup - 03").class
-            section
-                h2 
-                    | {{ title }}
+<template lang="pug">  
+    div.section-05
+        figure
+            img( :src="images", alt="Mockup - 03").class
+        section
+            h2 
+                | {{ title }}
 
-                p {{ describe }}
-                div.btn-zone
-                    button-01( :text="buttonText" @clickButton="")        
+            p {{ describe }}
+            div.btn-zone
+                button-01( :text="buttonText" @clickButton="")
 </template>
 <script>
 
@@ -38,8 +37,8 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-    
-    .color
+
+    .section-05
         font-family: $font
         background-color: $white
         background-image: url('/img/pattern-azul.svg')
@@ -48,17 +47,12 @@ export default {
         background-attachment: fixed
         padding: 30px 0
 
-    .section-04
         max-width: 1024px
         margin: auto
         align-items: center
-
-        @media screen and ( min-width: 990px)
-            display: flex
-            justify-content: space-between
-        @media screen and ( max-width: 989px)
-            display: flex
-            flex-direction: column
+        flex-direction: column
+        display: flex
+        justify-content: space-between
   
         section
             max-width: 400px
