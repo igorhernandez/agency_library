@@ -46,7 +46,6 @@ export default {
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed
-        padding: 30px 0
 
     .section-04
         max-width: 1024px

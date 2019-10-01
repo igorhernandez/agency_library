@@ -24,7 +24,7 @@
       )
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .itens
     font-family: $font
     padding: 50px 10px
