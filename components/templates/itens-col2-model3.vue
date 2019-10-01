@@ -1,25 +1,14 @@
 <template lang="pug">
   div.itens
     h2 Titulo principal da sessao aqui
+    p Descrição sobre itens que serão exibidos na parte de baixo
     div.division 
-      card-info(
+      card-simple2(
         :images="require('../../assets/img/vue.png')"
-        title="Titulo"
         describe="Aqui é onde irá a descricao"
       )
-      card-info(
+      card-simple2(
         :images="require('../../assets/img/vue.png')"
-        title="Titulo"
-        describe="Aqui é onde irá a descricao"
-      )
-      card-info(
-        :images="require('../../assets/img/vue.png')"
-        title="Titulo"
-        describe="Aqui é onde irá a descricao"
-      )
-      card-info(
-        :images="require('../../assets/img/vue.png')"
-        title="Titulo"
         describe="Aqui é onde irá a descricao"
       )
 </template>
@@ -27,15 +16,17 @@
 <style lang="sass" scoped>
   .itens
     font-family: $font
-    padding: 50px 10px
     h2 
       font-size: 2em
       text-align: center
-  .division 
-    padding: 50px
+    p 
+      font-size: 1em
+      text-align: center
+  .division
+    margin-bottom: 40px
     display: grid
     grid-gap: 10px
-    grid-template-columns: auto auto auto auto
+    grid-template-columns: auto auto
     @media screen and ( max-width: 585px )
         flex-direction: column
         align-items: center
