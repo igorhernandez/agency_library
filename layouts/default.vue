@@ -1,6 +1,6 @@
 <template lang="pug">
-  div 
-    //- menu
+  main.page
+    navigation
     nuxt
 </template>
 <style>
@@ -50,5 +50,9 @@ html {
 .button--gray:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.page {
+  margin-top: 100px
 }
 </style>

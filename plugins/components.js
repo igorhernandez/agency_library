@@ -1,8 +1,10 @@
 import Vue from 'vue'
 
 import CardInfo from '../components/shared/CardInfo'
+import CardSimple from '../components/shared/CardSimple'
 import Modal from '../components/shared/modal'
 import item from '../components/templates/item'
+import itens_col2 from '../components/templates/itens-col2'
 import itens_col3 from '../components/templates/itens-col3'
 import sectionLeft from '../components/templates/section-left'
 import sectionRight from '../components/templates/section-right'
@@ -19,10 +21,14 @@ import footer from '../components/templates/footer'
 
 import input_01 from '../components/shared/inputs/input-01'
 
+import navigation from '../components/shared/navigation'
+
 
 Vue.component('card-info', CardInfo)
+Vue.component('card-simple', CardSimple)
 Vue.component('modal', Modal)
 Vue.component('item', item)
+Vue.component('itens-col2', itens_col2)
 Vue.component('itens-col3', itens_col3)
 Vue.component('section-left', sectionLeft)
 Vue.component('section-right', sectionRight)
@@ -38,3 +44,5 @@ Vue.component('change', change)
 Vue.component('footer-01', footer)
 
 Vue.component('input-01', input_01)
+
+Vue.component('navigation', navigation)

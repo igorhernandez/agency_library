@@ -1,6 +1,5 @@
 <template lang="pug">
-  div 
-    menu-01
+  section.body
     section-left(
       :images="require('../assets/img/vue.png')"
       title="Comprando Symma você se torna parte da Etherdam!"
@@ -15,4 +14,14 @@
       buttonText="Saiba mais"
       linkSaiba="#"
     )
+    section-form(
+      :images="require('../assets/img/vue.png')"
+      title="Comprando Symma você se torna parte da Etherdam!"
+      :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
+      buttonText="Enviar"
+      )
 </template>
+<style lang="sass">
+  .page
+      margin-top: 100px
+</style>

@@ -46,7 +46,6 @@ export default {
 
 <style lang="sass" scoped>
     .container
-        padding: 30px 0
         background-color: $blue
         font-family: $font
     .section-03
