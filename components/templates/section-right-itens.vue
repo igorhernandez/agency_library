@@ -7,35 +7,47 @@
                 h2 
                     | {{ title }}
 
-                p {{ describe }}
-                itens-col2-descrip
+                p {{ description }}
+                itens-col2-model1(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
                 //- div.btn-zone
                 //-     button-01( :text="buttonText" @clickButton="")        
 </template>
 <script>
 
 export default {
-    props:{
-        images: String,
-        title: {
-            type: String,
-            default: () => {
-                return "Lorem Ipsum is dolor"
-            }
-        },
-        describe: {
-            type: String,
-            default: () => {
-                return "Lorem Ipsum is dolor"
-            }
-        },
-        buttonText: {
-            type: String,
-            default: () => {
-                return "Lorem Ipsum is dolor"
-            }
-        }
+  props:{
+    images: String,
+    title: {
+      type: String,
+      default: () => {
+        return "Lorem Ipsum is dolor"
+      }
     },
+    description: {
+      type: String,
+      default: () => {
+        return "Lorem Ipsum is dolor"
+      }
+    },
+    buttonText: {
+      type: String,
+      default: () => {
+        return "Lorem Ipsum is dolor"
+      }
+    },
+    textAlign: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    },
+    alignItems: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    }
+  },
 }
 </script>
 <style lang="sass" scoped>

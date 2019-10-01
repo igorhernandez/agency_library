@@ -1,22 +1,60 @@
 <template lang="pug">
   div.itens
-    h2 Titulo principal da sessao aqui
-    p Descrição sobre itens que serão exibidos na parte de baixo
-    div.division 
-      card-simple2(
+    h2(v-if="hasTitle") Titulo principal da sessao aqui
+    p(v-if="hasDesc") Descrição sobre itens que serão exibidos na parte de baixo
+    div.division
+      card-info3(
         :images="require('../../assets/img/vue.png')"
-        describe="Aqui é onde irá a descricao"
+        description="Aqui é onde irá a descricao"
+        :hasButton="false"
+        :textAlign="textAlign"
+        :alignItems="alignItems"
       )
-      card-simple2(
+      card-info3(
         :images="require('../../assets/img/vue.png')"
-        describe="Aqui é onde irá a descricao"
+        description="Aqui é onde irá a descricao"
+        :hasButton="false"
+        :textAlign="textAlign"
+        :alignItems="alignItems"
       )
-      card-simple2(
+      card-info3(
         :images="require('../../assets/img/vue.png')"
-        describe="Aqui é onde irá a descricao"
+        description="Aqui é onde irá a descricao"
+        :hasButton="false"
+        :textAlign="textAlign"
+        :alignItems="alignItems"
       )
 </template>
-
+<script>
+export default {
+  props: {
+    hasTitle: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasDesc: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    textAlign: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    },
+    alignItems: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    }
+  }
+}
+</script>
 <style lang="sass" scoped>
   .itens
     font-family: $font

@@ -5,8 +5,8 @@
                 h2 
                     | {{ title }}
                 
-                p {{ describe }}
-                itens-col2-model2
+                p {{ description }}
+                itens-col2-model1(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
                 //- div.btn-zone
                 //-     button-02( :link="linkSaiba" :interno="true" :text="buttonText")
             figure
@@ -23,7 +23,7 @@ export default {
         return "Lorem Ipsum is dolor"
       }
     },
-    describe: {
+    description: {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"
@@ -39,6 +39,18 @@ export default {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"
+      }
+    },
+    textAlign: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    },
+    alignItems: {
+      type: String,
+      default: () => {
+        return 'inherit'
       }
     }
   },
