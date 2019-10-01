@@ -31,6 +31,7 @@ import footer from '../components/templates/footer'
 import input_01 from '../components/shared/inputs/input-01'
 
 import navigation from '../components/shared/navigation'
+import navigationLeft from '../components/shared/navigation-left'
 
 
 Vue.component('card-info1', CardInfo1)
@@ -64,3 +65,4 @@ Vue.component('footer-01', footer)
 Vue.component('input-01', input_01)
 
 Vue.component('navigation', navigation)
+Vue.component('navigation-left', navigationLeft)

@@ -28,7 +28,3 @@
     itens-col3-partners(:hasTitle="false" :hasDesc="false")
     itens-col4-partners
 </template>
-<style lang="sass">
-  .page
-      margin-top: 100px
-</style>
