@@ -94,6 +94,8 @@ export default {
                 display: flex 
                 align-items: center
                 cursor: pointer
+            span 
+                color: $white
         nav
             display: flex
             align-content: center
