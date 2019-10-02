@@ -1,9 +1,9 @@
 <template lang="pug">
     div.card(:style="`text-align: ${textAlign}; align-items: ${alignItems}`")
-        figure
+        figure(v-if="hasImage")
             img( :src="images", alt="Mockup - 01")
-        h2 {{title}}
-        p {{description}}
+        h2(v-if="hasTitle") {{title}}
+        p(v-if="hasDesc") {{description}}
         button-01( v-if="hasButton" :link="link" :interno="true" :text="linkText" class="btn")
 
 </template>
@@ -26,6 +26,24 @@ export default {
       }
     },
     hasButton: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasTitle: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasDesc: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasImage: {
       type: Boolean,
       default: () => {
         return true

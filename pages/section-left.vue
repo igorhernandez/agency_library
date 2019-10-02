@@ -9,9 +9,9 @@
     div.full
       img(:src="require('../assets/img/vue.png')")
       section.itens
-        itens-col2
-        itens-col2
-        itens-col2
+        itens-col2-model1(:hasTitle="false" :hasDesc="false")
+        itens-col2-model1(:hasTitle="false" :hasDesc="false")
+        itens-col2-model1(:hasTitle="false" :hasDesc="false")
 </template>
 <style lang="sass" scoped>
 .full
