@@ -47,6 +47,8 @@
     width: 100%
     background-color: $bgBlue 
     .fixed-comp 
+      height: 100vh
+      overflow: auto
       position: fixed
     a
       text-decoration: none

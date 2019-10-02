@@ -10,9 +10,6 @@
       div.division#itens-col2-model2 
         h3 itens-col2-model2
         itens-col2-model2
-      div.division#itens-col2-model3 
-        h3 itens-col2-model3
-        itens-col2-model3
       div.division#itens-col3-model1 
         h3 itens-col3-model1
         itens-col3-model1
@@ -22,10 +19,8 @@
       div.division#itens-col3-model3 
         h3 itens-col3-model3
         itens-col3-model3
-      div.division#itens-col3-model4 
-        h3 itens-col3-model4
-        itens-col3-model4
       div.division#itens-col3-partners
+        h3 itens-col3-partners
         itens-col3-partners
       div.division#itens-col4-model1 
         h3 itens-col4-model1
@@ -33,10 +28,8 @@
       div.division#itens-col4-model2 
         h3 itens-col4-model2
         itens-col4-model2
-      div.division#itens-col4-model3 
-        h3 itens-col4-model3
-        itens-col4-model3
       div.division#itens-col4-partners
+        h3 itens-col4-partners
         itens-col4-partners
       div.division#section-top 
         h3 Section-Top
@@ -81,6 +74,7 @@
           linkSaiba="#"
         )
       div.division#section-form
+        h3 Section-Form
         section-form(
           :images="require('../assets/img/vue.png')"
           title="Comprando Symma você se torna parte da Etherdam!"
