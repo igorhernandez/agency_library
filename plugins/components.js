@@ -4,13 +4,15 @@ import CardInfo1 from '../components/shared/CardInfo1'
 import CardInfo2 from '../components/shared/CardInfo2'
 import CardInfo3 from '../components/shared/CardInfo3'
 import Modal from '../components/shared/modal'
-import itens_col4_model1 from '../components/templates/itens-col4-model1'
-import itens_col4_model2 from '../components/templates/itens-col4-model2'
 import itens_col2_model1 from '../components/templates/itens-col2-model1'
 import itens_col2_model2 from '../components/templates/itens-col2-model2'
+import itens_col2_model3 from '../components/templates/itens-col2-model3'
 import itens_col3_model1 from '../components/templates/itens-col3-model1'
 import itens_col3_model2 from '../components/templates/itens-col3-model2'
 import itens_col3_model3 from '../components/templates/itens-col3-model3'
+import itens_col4_model1 from '../components/templates/itens-col4-model1'
+import itens_col4_model2 from '../components/templates/itens-col4-model2'
+import itens_col4_model3 from '../components/templates/itens-col4-model3'
 import sectionLeft from '../components/templates/section-left'
 import sectionRight from '../components/templates/section-right'
 import sectionLeft_Itens from '../components/templates/section-left-itens'
@@ -38,13 +40,15 @@ Vue.component('card-info1', CardInfo1)
 Vue.component('card-info2', CardInfo2)
 Vue.component('card-info3', CardInfo3)
 Vue.component('modal', Modal)
-Vue.component('itens-col4-model1', itens_col4_model1)
-Vue.component('itens-col4-model2', itens_col4_model2)
 Vue.component('itens-col2-model1', itens_col2_model1)
 Vue.component('itens-col2-model2', itens_col2_model2)
+Vue.component('itens-col2-model3', itens_col2_model3)
 Vue.component('itens-col3-model1', itens_col3_model1)
 Vue.component('itens-col3-model2', itens_col3_model2)
 Vue.component('itens-col3-model3', itens_col3_model3)
+Vue.component('itens-col4-model1', itens_col4_model1)
+Vue.component('itens-col4-model2', itens_col4_model2)
+Vue.component('itens-col4-model3', itens_col4_model3)
 Vue.component('section-left', sectionLeft)
 Vue.component('section-right', sectionRight)
 Vue.component('section-left-itens', sectionLeft_Itens)

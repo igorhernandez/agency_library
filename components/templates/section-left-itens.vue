@@ -2,11 +2,12 @@
     div.container
         div.section-03
             section
-                h2 
+                h2(v-if="hasTitle")
                     | {{ title }}
                 
-                p {{ description }}
-                itens-col2-model1(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
+                p(v-if="hasDesc") {{ description }}
+                itens-col2-model2(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
+                itens-col2-model2(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
                 //- div.btn-zone
                 //-     button-02( :link="linkSaiba" :interno="true" :text="buttonText")
             figure
@@ -27,6 +28,18 @@ export default {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"
+      }
+    },
+    hasTitle: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasDesc: {
+      type: Boolean,
+      default: () => {
+        return true
       }
     },
     buttonText: {
@@ -75,7 +88,7 @@ export default {
 
         section
           margin-top: 60px
-          max-width: 400px
+          max-width: 800px
           @media screen and ( max-width: 989px)
             padding: 15px
           h2
