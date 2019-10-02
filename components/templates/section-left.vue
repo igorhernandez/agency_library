@@ -52,7 +52,7 @@ export default {
         max-width: 1024px
         margin: auto
         align-items: center
-
+        padding: 100px
         @media screen and ( min-width: 990px)
             display: flex
             justify-content: space-between

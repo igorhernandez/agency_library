@@ -46,7 +46,7 @@ export default {
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed
-
+        padding: 100px
         max-width: 1024px
         margin: auto
         align-items: center

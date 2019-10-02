@@ -10,12 +10,11 @@
 
 <style lang="sass" scoped>
   .menu-left 
-    display: flex
     background-color: $white
     height: 100vh
     top: 0
-    padding: 50px
     font-family: $font
+    font-size: 0.7rem
     .content-menu
       left: 0
       position: fixed
@@ -24,8 +23,9 @@
         text-decoration: none
       ul 
         list-style: none
+        padding: 10px 20px
         li 
-          padding: 20px 10px
+          padding: 10px 0
           &:hover
             color: $blue
             transition: 0.4s

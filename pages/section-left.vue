@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.all
     section-form(
       :images="require('../assets/img/vue.png')"
       title="Comprando Symma você se torna parte da Etherdam!"
@@ -17,6 +17,7 @@
 .full
   display: grid
   grid: auto / 500px auto
+  
   .itens 
     display: flex
     flex-direction: column
