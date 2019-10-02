@@ -19,18 +19,12 @@
       div.division#itens-col3-model3 
         h3 itens-col3-model3
         itens-col3-model3
-      div.division#itens-col3-partners
-        h3 itens-col3-partners
-        itens-col3-partners
       div.division#itens-col4-model1 
         h3 itens-col4-model1
         itens-col4-model1
       div.division#itens-col4-model2 
         h3 itens-col4-model2
         itens-col4-model2
-      div.division#itens-col4-partners
-        h3 itens-col4-partners
-        itens-col4-partners
       div.division#section-top 
         h3 Section-Top
         section-top(:images="require('../assets/img/vue.png')")
