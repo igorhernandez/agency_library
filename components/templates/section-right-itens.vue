@@ -4,10 +4,10 @@
             figure
                 img( :src="images", alt="Mockup - 03").class
             section
-                h2 
+                h2(v-if="hasTitle")
                     | {{ title }}
 
-                p {{ description }}
+                p(v-if="hasDesc") {{ description }}
                 itens-col2-model1(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
                 //- div.btn-zone
                 //-     button-01( :text="buttonText" @clickButton="")        
@@ -27,6 +27,18 @@ export default {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"
+      }
+    },
+    hasTitle: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasDesc: {
+      type: Boolean,
+      default: () => {
+        return true
       }
     },
     buttonText: {

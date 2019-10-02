@@ -46,7 +46,7 @@ export default {
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed
-        padding: 100px
+
         max-width: 1024px
         margin: auto
         align-items: center
@@ -59,7 +59,9 @@ export default {
             flex-direction: column
   
         section
-            max-width: 400px
+            background-color: #ddd
+            max-width: 600px
+            padding: 15px
             @media screen and ( max-width: 989px)
                 padding: 15px
             h2
@@ -73,7 +75,6 @@ export default {
                     font-size: 2.4em
                 
             .fields-zone
-                background-color: #ddd
                 padding: 20px
                 margin-bottom: 40px
                 
@@ -91,6 +92,7 @@ export default {
         .btn-zone
             max-width: 165px
             height: 50px
+            margin: auto
             
 
 </style>

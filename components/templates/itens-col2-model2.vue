@@ -58,6 +58,7 @@ export default {
       font-size: 1em
       text-align: center
   .division
+    margin-top: 40px
     margin-bottom: 40px
     display: grid
     grid-gap: 10px

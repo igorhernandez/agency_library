@@ -3,13 +3,15 @@ import Vue from 'vue'
 // ==== ITENS ====
 import itens_col2_model1 from '../components/templates/itens-col2-model1'
 import itens_col2_model2 from '../components/templates/itens-col2-model2'
+import itens_col2_model3 from '../components/templates/itens-col2-model3'
 import itens_col3_model1 from '../components/templates/itens-col3-model1'
 import itens_col3_model2 from '../components/templates/itens-col3-model2'
 import itens_col3_model3 from '../components/templates/itens-col3-model3'
-import itens_col3_partners from '../components/templates/itens-col3-partners'
+// import itens_col3_partners from '../components/templates/itens-col3-partners'
 import itens_col4_model1 from '../components/templates/itens-col4-model1'
 import itens_col4_model2 from '../components/templates/itens-col4-model2'
-import itens_col4_partners from '../components/templates/itens-col4-partners'
+import itens_col4_model3 from '../components/templates/itens-col4-model3'
+// import itens_col4_partners from '../components/templates/itens-col4-partners'
 
 // ==== SECTIONS ====
 import sectionLeft from '../components/templates/section-left'
@@ -18,7 +20,9 @@ import sectionRight from '../components/templates/section-right'
 import sectionRight_Itens from '../components/templates/section-right-itens'
 import sectionTop from '../components/templates/section-top'
 import sectionFull from '../components/templates/section-full'
-import sectionForm from '../components/templates/section-form'
+import sectionFormLeft from '../components/templates/section-form-left'
+import sectionFormRight from '../components/templates/section-form-right'
+import sectionFormFull from '../components/templates/section-form-full'
 
 // ==== BUTTONS ====
 import button_01 from '../components/shared/buttons/button-01'
@@ -53,20 +57,24 @@ Vue.component('card-info3', CardInfo3)
 Vue.component('modal', Modal)
 Vue.component('itens-col2-model1', itens_col2_model1)
 Vue.component('itens-col2-model2', itens_col2_model2)
+Vue.component('itens-col2-model3', itens_col2_model3)
 Vue.component('itens-col3-model1', itens_col3_model1)
 Vue.component('itens-col3-model2', itens_col3_model2)
 Vue.component('itens-col3-model3', itens_col3_model3)
-Vue.component('itens-col3-partners', itens_col3_partners)
+// Vue.component('itens-col3-partners', itens_col3_partners)
 Vue.component('itens-col4-model1', itens_col4_model1)
 Vue.component('itens-col4-model2', itens_col4_model2)
-Vue.component('itens-col4-partners', itens_col4_partners)
+Vue.component('itens-col4-model3', itens_col4_model3)
+// Vue.component('itens-col4-partners', itens_col4_partners)
 Vue.component('section-left', sectionLeft)
 Vue.component('section-right', sectionRight)
 Vue.component('section-left-itens', sectionLeft_Itens)
 Vue.component('section-right-itens', sectionRight_Itens)
 Vue.component('section-top', sectionTop)
 Vue.component('section-full', sectionFull)
-Vue.component('section-form', sectionForm)
+Vue.component('section-form-left', sectionFormLeft)
+Vue.component('section-form-right', sectionFormRight)
+Vue.component('section-form-full', sectionFormFull)
 
 
 Vue.component('button-01', button_01)

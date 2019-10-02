@@ -2,22 +2,29 @@
   div.itens
     h2(v-if="hasTitle") Titulo principal da sessao aqui
     p(v-if="hasDesc") Descrição sobre itens que serão exibidos na parte de baixo
-    div.division 
-      card-info1(
+    div.division
+      card-info3(
         :images="require('../../assets/img/vue.png')"
         description="Aqui é onde irá a descricao"
         :hasButton="false"
         :textAlign="textAlign"
         :alignItems="alignItems"
       )
-      card-info1(
+      card-info3(
         :images="require('../../assets/img/vue.png')"
         description="Aqui é onde irá a descricao"
         :hasButton="false"
         :textAlign="textAlign"
         :alignItems="alignItems"
       )
-      card-info1(
+      card-info3(
+        :images="require('../../assets/img/vue.png')"
+        description="Aqui é onde irá a descricao"
+        :hasButton="false"
+        :textAlign="textAlign"
+        :alignItems="alignItems"
+      )
+      card-info3(
         :images="require('../../assets/img/vue.png')"
         description="Aqui é onde irá a descricao"
         :hasButton="false"
@@ -71,7 +78,7 @@ export default {
     margin-bottom: 40px
     display: grid
     grid-gap: 10px
-    grid-template-columns: auto auto auto
+    grid-template-columns: auto auto auto auto
     @media screen and ( max-width: 585px )
         flex-direction: column
         align-items: center
