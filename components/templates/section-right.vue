@@ -7,7 +7,7 @@
                 h2 
                     | {{ title }}
 
-                p {{ describe }}
+                p {{ description }}
                 div.btn-zone
                     button-01( :text="buttonText" @clickButton="")        
 </template>
@@ -22,7 +22,7 @@ export default {
                 return "Lorem Ipsum is dolor"
             }
         },
-        describe: {
+        description: {
             type: String,
             default: () => {
                 return "Lorem Ipsum is dolor"

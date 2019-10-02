@@ -5,7 +5,7 @@
                 h2 
                     | {{ title }}
                 
-                p {{ describe }}
+                p {{ description }}
                 div.btn-zone
                     button-02( :link="linkSaiba" :interno="true" :text="buttonText")
             figure
@@ -22,7 +22,7 @@ export default {
         return "Lorem Ipsum is dolor"
       }
     },
-    describe: {
+    description: {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"

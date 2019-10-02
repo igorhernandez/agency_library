@@ -1,10 +1,10 @@
 <template lang="pug">
     div.card
-        figure
+        figure(:style="`align-items: ${alignItems}`")
             img( :src="images", alt="Mockup - 01")
-        h2 {{title}}
-        p {{describe}}
-        button-01( :link="link" :interno="true" :text="linkText" class="btn")
+            h2 {{title}}
+        p {{description}}
+        button-01( v-if="hasButton" :link="link" :interno="true" :text="linkText" class="btn")
 
 </template>
 <script>
@@ -19,10 +19,16 @@ export default {
         return "Lorem Ipsum is dolor"
       }
     },
-    describe: {
+    description: {
       type: String,
       default: () => {
         return "Lorem Ipsum is dolor"
+      }
+    },
+    hasButton: {
+      type: Boolean,
+      default: () => {
+        return true
       }
     },
     linkText: {
@@ -37,6 +43,18 @@ export default {
         return "Lorem Ipsum is dolor"
       }
     },
+    textAlign: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    },
+    alignItems: {
+      type: String,
+      default: () => {
+        return 'inherit'
+      }
+    }
   },
 }
 </script>
@@ -46,23 +64,20 @@ export default {
         display: flex
         flex-direction: column
         justify-content: space-between
-        align-items: center
-        text-align: center
         max-width: 242px
         margin: auto
         // height: 355px
-        margin-bottom: 70px
 
         figure
-            margin-bottom: 40px
-            width: 100px
-            height: 100px
+            display: grid
+            grid: auto / auto auto
+            margin-bottom: 10px
+            align-items: center
             img
                 width: 100%
 
         p
           color: $black
-          margin: 0 0 30px 0
           font-weight: 100
           font-size: 1em
           line-height: 25px
@@ -73,8 +88,6 @@ export default {
 
         h2
           font-size: 24px
-          max-width: 208px
-          margin: -20px 0 20px 0
 
     .btn
       background-color: transparent
