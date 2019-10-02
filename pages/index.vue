@@ -18,13 +18,12 @@
       textAlign="inherit"
       alignItems="inherit"
     )
-    section-form(
+    section-form-full(
       :images="require('../assets/img/vue.png')"
       title="Comprando Symma você se torna parte da Etherdam!"
       :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
       buttonText="Enviar"
     )
-    itens-col3-partners(:hasTitle="true" :hasDesc="true")
-    itens-col3-partners(:hasTitle="false" :hasDesc="false")
-    itens-col4-partners
+    itens-col3-model2(:hasTitle="false" :hasDesc="false")
+    itens-col3-model2(:hasTitle="false" :hasDesc="false")
 </template>

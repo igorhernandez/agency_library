@@ -17,7 +17,9 @@ import sectionLeft_Itens from '../components/templates/section-left-itens'
 import sectionRight_Itens from '../components/templates/section-right-itens'
 import sectionTop from '../components/templates/section-top'
 import sectionFull from '../components/templates/section-full'
-import sectionForm from '../components/templates/section-form'
+import sectionFormLeft from '../components/templates/section-form-left'
+import sectionFormRight from '../components/templates/section-form-right'
+import sectionFormFull from '../components/templates/section-form-full'
 
 import button_01 from '../components/shared/buttons/button-01'
 import button_02 from '../components/shared/buttons/button-02'
@@ -49,7 +51,9 @@ Vue.component('section-left-itens', sectionLeft_Itens)
 Vue.component('section-right-itens', sectionRight_Itens)
 Vue.component('section-top', sectionTop)
 Vue.component('section-full', sectionFull)
-Vue.component('section-form', sectionForm)
+Vue.component('section-form-left', sectionFormLeft)
+Vue.component('section-form-right', sectionFormRight)
+Vue.component('section-form-full', sectionFormFull)
 
 Vue.component('button-01', button_01)
 Vue.component('button-02', button_02)
