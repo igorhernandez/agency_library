@@ -67,9 +67,25 @@
           buttonText="Saiba mais"
           linkSaiba="#"
         )
-      div.division#section-form
-        h3 Section-Form
-        section-form(
+      div.division#section-form-full
+        h3 Section-Form-Full
+        section-form-full(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
+          buttonText="Enviar"
+        )
+      div.division#section-form-left
+        h3 Section-Form-left
+        section-form-left(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
+          buttonText="Enviar"
+        )
+      div.division#section-form-right
+        h3 Section-Form-right
+        section-form-right(
           :images="require('../assets/img/vue.png')"
           title="Comprando Symma você se torna parte da Etherdam!"
           :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"

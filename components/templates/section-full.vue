@@ -57,7 +57,7 @@ export default {
                     padding: 15px
                 h2
                     font-weight: bold
-                    color: $blue
+                    color: $white
                     line-height: 1.4em
                     text-align: center
                     @media screen and ( min-width: 990px )

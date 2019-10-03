@@ -25,6 +25,14 @@
         p section-right-itens
       a(href="#section-left")
         p section-left
+      a(href="#section-left-itens")
+        p section-left-itens
+      a(href="#section-form-full")
+        p section-form-full
+      a(href="#section-form-left")
+        p section-form-left
+      a(href="#section-form-right")
+        p section-form-right
 </template>
 
 <style lang="sass" scoped>
