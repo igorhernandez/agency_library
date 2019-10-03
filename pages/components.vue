@@ -10,6 +10,9 @@
       div.division#itens-col2-model2 
         h3 itens-col2-model2
         itens-col2-model2
+      div.division#itens-col2-model3 
+        h3 itens-col2-model3
+        itens-col2-model3
       div.division#itens-col3-model1 
         h3 itens-col3-model1
         itens-col3-model1
@@ -25,6 +28,9 @@
       div.division#itens-col4-model2 
         h3 itens-col4-model2
         itens-col4-model2
+      div.division#itens-col4-model3 
+        h3 itens-col4-model3
+        itens-col4-model3
       div.division#section-top 
         h3 Section-Top
         section-top(:images="require('../assets/img/vue.png')")

@@ -5,6 +5,8 @@
         p itens-col2-model1
       a(href="#itens-col2-model2")
         p itens-col2-model2
+      a(href="#itens-col2-model3")
+        p itens-col2-model3
       a(href="#itens-col3-model1")
         p itens-col3-model1
       a(href="#itens-col3-model2")
@@ -15,6 +17,8 @@
         p itens-col4-model1
       a(href="#itens-col4-model2")
         p itens-col4-model2
+      a(href="#itens-col4-model3")
+        p itens-col4-model3
       a(href="#section-top")
         p section-top
       a(href="#section-full")
