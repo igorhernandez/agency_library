@@ -25,8 +25,6 @@
         p section-right-itens
       a(href="#section-left")
         p section-left
-      a(href="#section-left-itens")
-        p section-left-itens
 </template>
 
 <style lang="sass" scoped>
