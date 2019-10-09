@@ -1,7 +1,7 @@
 <template lang="pug">
   div.body
     section#full
-      section-full(:images="require('../assets/img/vue.png')")
+      section-full(:images="require('../assets/img/guide/banner.jpg')")
     section#itens
       itens-col3-model2
     section#info-right 

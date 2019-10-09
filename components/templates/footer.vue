@@ -65,8 +65,8 @@
 
 <style lang="sass" scoped>
     .row
+        font-family: $font
         padding: 0 40px
-        max-width: 1024px
         background-color: $blue
         color: $black
         margin: auto

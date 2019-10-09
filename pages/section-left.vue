@@ -16,7 +16,7 @@
 <style lang="sass" scoped>
 .full
   display: grid
-  grid: auto / 500px auto
+  grid: auto / auto
   
   .itens 
     display: flex

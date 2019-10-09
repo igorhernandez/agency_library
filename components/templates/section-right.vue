@@ -48,10 +48,10 @@ export default {
         background-attachment: fixed
 
     .section-04
-        max-width: 1024px
+        // max-width: 1024px
         margin: auto
         align-items: center
-        padding: 100px
+        padding: 0px 40px
         @media screen and ( min-width: 990px)
             display: flex
             justify-content: space-between
@@ -60,7 +60,7 @@ export default {
             flex-direction: column
   
         section
-            max-width: 400px
+            width: 40%
             @media screen and ( max-width: 989px)
                 padding: 15px
             h2

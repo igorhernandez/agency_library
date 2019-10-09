@@ -29,27 +29,28 @@ export default {
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed
-        
-        max-width: 1024px
+
+        // max-width: 1024px
         margin: auto
         align-items: center
         flex-direction: column
         display: flex
         justify-content: space-between
-
+        height: 100vh
         .container
             display: flex
             justify-content: center
             align-items: center
             position: relative
+            height: 100vh
             @media screen and ( max-width: 989px )
                 width: 100%
-                max-width: 450px
-                margin: 20px auto
-                padding: 15px
+                // max-width: 450px
+                // margin: 20px auto
+                // padding: 15px
             img
                 width: 100% 
-  
+                height: 100vh
             section
                 position: absolute
                 max-width: 600px

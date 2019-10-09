@@ -58,7 +58,8 @@ export default {
   
         section
             background-color: #ddd
-            padding: 15px
+            padding: 50px
+            border-radius: 10px
             @media screen and ( max-width: 989px)
                 padding: 15px
             h2
