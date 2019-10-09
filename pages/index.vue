@@ -3,7 +3,7 @@
     section#full
       section-full(:images="require('../assets/img/vue.png')")
     section#itens
-      itens-col3-model2
+      itens-col3-model1
     section#info-right 
       section-right(
         :images="require('../assets/img/vue.png')"
@@ -29,10 +29,10 @@
         linkSaiba="#"
       )
     section#info-left-itens
-      section-left-itens(
+      section-left-itens-model2(
         :images="require('../assets/img/vue.png')"
         title="Comprando Symma você se torna parte da Etherdam!"
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+        :hasDesc="false"
         buttonText="Saiba mais"
         linkSaiba="#"
       )
