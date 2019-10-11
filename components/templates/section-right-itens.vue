@@ -67,7 +67,7 @@ export default {
     .color
         font-family: $font
         background-color: $white
-        background-image: url('/img/pattern-azul.svg')
+        // background-image: url('/img/pattern-azul.svg')
         background-repeat: repeat-x
         background-position-y: 60%
         background-attachment: fixed

@@ -35,6 +35,7 @@ import menu_01 from '../components/shared/menu-01'
 import navigation from '../components/shared/navigation'
 import navigationLeft from '../components/shared/navigation-left'
 import navComponents from '../components/shared/nav-components'
+import navElements from '../components/shared/nav-elements'
 
 // ==== INPUTS ====
 import input_01 from '../components/shared/inputs/input-01'
@@ -50,7 +51,31 @@ import CardInfo1 from '../components/shared/CardInfo1'
 import CardInfo2 from '../components/shared/CardInfo2'
 import CardInfo3 from '../components/shared/CardInfo3'
 
+// ==== SLIDESHOW ==== 
+import slideshow from '../components/shared/slideshow'
+import slideshow_02 from '../components/shared/slideshow-02'
 
+// ==== ELEMENTS ====
+import tooltip from "../components/shared/tooltip"
+import loader01 from "../components/shared/loader01"
+import loader02 from "../components/shared/loader02"
+import loader03 from "../components/shared/loader03"
+import loader04 from "../components/shared/loader04"
+import loader05 from "../components/shared/loader05"
+import loader06 from "../components/shared/loader06"
+import loader07 from "../components/shared/loader07"
+import loader08 from "../components/shared/loader08"
+import loader09 from "../components/shared/loader09"
+
+import {
+  Hooper,
+  Slide,
+  Navigation as HooperNavigation
+  } from 'hooper';
+
+Vue.component('hooper', Hooper)
+Vue.component('slide', Slide)
+Vue.component('hooper-navigation', HooperNavigation)
 Vue.component('card-info1', CardInfo1)
 Vue.component('card-info2', CardInfo2)
 Vue.component('card-info3', CardInfo3)
@@ -76,15 +101,28 @@ Vue.component('section-form-left', sectionFormLeft)
 Vue.component('section-form-right', sectionFormRight)
 Vue.component('section-form-full', sectionFormFull)
 
+Vue.component('slideshow-01', slideshow)
+Vue.component('slideshow-02', slideshow_02)
 
 Vue.component('button-01', button_01)
 Vue.component('button-02', button_02)
 Vue.component('button-03', button_03)
 Vue.component('menu-01', menu_01)
 Vue.component('footer-01', footer)
+Vue.component("tooltip", tooltip)
+Vue.component("loader-01", loader01)
+Vue.component("loader-02", loader02)
+Vue.component("loader-03", loader03)
+Vue.component("loader-04", loader04)
+Vue.component("loader-05", loader05)
+Vue.component("loader-06", loader06)
+Vue.component("loader-07", loader07)
+Vue.component("loader-08", loader08)
+Vue.component("loader-09", loader09)
 
 Vue.component('input-01', input_01)
 
 Vue.component('navigation', navigation)
 Vue.component('navigation-left', navigationLeft)
 Vue.component('nav-components', navComponents)
+Vue.component('nav-elements', navElements)

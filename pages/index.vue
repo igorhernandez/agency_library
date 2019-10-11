@@ -1,49 +1,8 @@
 <template lang="pug">
   div.body
-    section#full
-      section-full(:images="require('../assets/img/vue.png')")
-    section#itens
-      itens-col3-model2
-    section#info-right 
-      section-right(
-        :images="require('../assets/img/vue.png')"
-        title="Comprando Symma você se torna parte da Etherdam!"
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
-        buttonText="Saiba mais"
-        linkSaiba="#"
-      )
-    section#info-left
-      section-left(
-        :images="require('../assets/img/vue.png')"
-        title="Comprando Symma você se torna parte da Etherdam!"
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
-        buttonText="Saiba mais"
-        linkSaiba="#"
-      )
-    section#info-right
-      section-right(
-        :images="require('../assets/img/vue.png')"
-        title="Comprando Symma você se torna parte da Etherdam!"
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
-        buttonText="Saiba mais"
-        linkSaiba="#"
-      )
-    section#info-left-itens
-      section-left-itens(
-        :images="require('../assets/img/vue.png')"
-        title="Comprando Symma você se torna parte da Etherdam!"
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
-        buttonText="Saiba mais"
-        linkSaiba="#"
-      )
-    section#contact 
-     section-form-full(
-          :images="require('../assets/img/vue.png')"
-          title="Comprando Symma você se torna parte da Etherdam!"
-          :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
-          buttonText="Enviar"
-        )
-    footer-01
+    nuxt-link(to="/components") Components
+    nuxt-link(to="/elements") Elements
+    nuxt-link(to="/layout/layout-01") Layout-01
 </template>
 
 <script>
@@ -57,6 +16,23 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  section 
-    padding-bottom: 120px
+  .body 
+    display: grid 
+    grid-template-columns: auto auto auto
+    grid-gap: 10px
+    justify-content: center
+    align-items: center
+    font-family: $font 
+    font-size: 1em
+    a
+      background-color: $bgBlue
+      padding: 30px 50px
+      border-radius: 5px
+      color: $white
+      text-decoration: none
+      margin-top: 10px
+      &:hover 
+          background-color: $hoverBlue
+          cursor: pointer
+          transition: 0.9s
 </style>

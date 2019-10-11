@@ -97,7 +97,56 @@
           :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
           buttonText="Enviar"
         )
-      
+      div.division#slideshow-01
+        slideshow-01( 
+          :itemsToShow="1"
+          :autoPlay="true"
+          :autoPlaySpeed="5000"
+          :progressBar="true"
+          :pagination="true"
+          :navigation="true"
+          :transitionSpeed="900"
+          :contentSlide="images")
+      div.division#slider-02
+        h3 Slidershow
+        slideshow-02.slide(
+          :navegacao="true"
+          :paginacao="true"
+          :imagesAmount="5"
+          :ballsPosition="'leftbottom'"
+          :intervalTime="4000"
+          :autoPlay="true" )
+          template( v-slot:slide1)
+            img(src="../assets/img/agency/dev.jpg")
+            h2 Um outro titulo super bacana aqui
+            p E uma descrição de como esse fundo vermelho é inspirador
+            p o que falaremos aqui? Eu não faço a menor ideia
+            a( href="#" ) Bora pra outro link
+          template( v-slot:slide2)
+            img(src="../assets/img/agency/dev_02.jpg")
+            h2 Um outro titulo super bacana aqui
+            p E uma descrição de como esse fundo vermelho é inspirador
+            p o que falaremos aqui? Eu não faço a menor ideia
+            a( href="#" ) Bora pra outro link
+          template( v-slot:slide3)
+            img(src="../assets/img/agency/dev_03.jpg")
+            h2 Um outro titulo super bacana aqui
+            p E uma descrição de como esse fundo vermelho é inspirador
+            p o que falaremos aqui? Eu não faço a menor ideia
+            a( href="#" ) Bora pra outro link
+
+          template( v-slot:slide4)
+            img(src="../assets/img/agency/plan.jpg")
+            h2 Um outro titulo super bacana aqui
+            p E uma descrição de como esse fundo vermelho é inspirador
+            p o que falaremos aqui? Eu não faço a menor ideia
+            a( href="#" ) Bora pra outro link
+          template( v-slot:slide5)
+            img(src="../assets/img/agency/video.jpg")
+            h2 Um outro titulo super bacana aqui
+            p E uma descrição de como esse fundo vermelho é inspirador
+            p o que falaremos aqui? Eu não faço a menor ideia
+            a( href="#" ) Bora pra outro link
 </template>
 
 <style lang="sass" scoped>
@@ -114,4 +163,11 @@
       border-bottom: 1px solid $grayDark
       h3 
         padding-left: 40px
+      .slide 
+        overflow: hidden
+        width: 100% 
+        height: 100vh 
+        margin: 0px auto
+        img 
+          opacity: 0.2
 </style>

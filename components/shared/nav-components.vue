@@ -37,6 +37,8 @@
         p section-form-left
       a(href="#section-form-right")
         p section-form-right
+      a(href="#slider-01")
+        p slider-01
 </template>
 
 <style lang="sass" scoped>
