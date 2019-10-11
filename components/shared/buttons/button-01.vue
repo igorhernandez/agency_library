@@ -33,6 +33,4 @@ export default {
         &:hover
             // background-color: $orange 
             transform: scale(1.1)
-        span
-            margin: auto
 </style>

@@ -2,6 +2,7 @@
     div.card(:style="`text-align: ${textAlign}; align-items: ${alignItems}`")
         figure(v-if="hasImage")
             img( :src="images", alt="Mockup - 01")
+        p(v-if="hasComment") {{comment}}
         h2(v-if="hasTitle") {{title}}
         p(v-if="hasDesc") {{description}}
         button-01( v-if="hasButton" :link="link" :interno="true" :text="linkText" class="btn")
@@ -25,6 +26,12 @@ export default {
         return "Lorem Ipsum is dolor"
       }
     },
+    comment: {
+      type: String,
+      default: () => {
+        return "Lorem Ipsum is dolor"
+      }
+    },
     hasButton: {
       type: Boolean,
       default: () => {
@@ -38,6 +45,12 @@ export default {
       }
     },
     hasDesc: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
+    hasComment: {
       type: Boolean,
       default: () => {
         return true

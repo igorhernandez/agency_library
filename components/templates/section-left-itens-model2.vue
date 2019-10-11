@@ -7,7 +7,6 @@
                 
                 p(v-if="hasDesc") {{ description }}
                 itens-col2-model2(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
-                itens-col2-model2(:hasTitle="false" :hasDesc="false" :textAlign="textAlign" :alignItems="alignItems")
                 //- div.btn-zone
                 //-     button-02( :link="linkSaiba" :interno="true" :text="buttonText")
             figure

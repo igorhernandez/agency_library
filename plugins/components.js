@@ -15,14 +15,22 @@ import itens_col4_model3 from '../components/templates/itens-col4-model3'
 
 // ==== SECTIONS ====
 import sectionLeft from '../components/templates/section-left'
-import sectionLeft_Itens from '../components/templates/section-left-itens'
+import sectionLeft_Itens_Model1 from '../components/templates/section-left-itens-model1'
+import sectionLeft_Itens_Model2 from '../components/templates/section-left-itens-model2'
+import sectionLeft_Itens_Model3 from '../components/templates/section-left-itens-model3'
 import sectionRight from '../components/templates/section-right'
-import sectionRight_Itens from '../components/templates/section-right-itens'
+import sectionRight_Itens_Model1 from '../components/templates/section-right-itens-model1'
+import sectionRight_Itens_Model2 from '../components/templates/section-right-itens-model2'
+import sectionRight_Itens_Model3 from '../components/templates/section-right-itens-model3'
 import sectionTop from '../components/templates/section-top'
 import sectionFull from '../components/templates/section-full'
 import sectionFormLeft from '../components/templates/section-form-left'
 import sectionFormRight from '../components/templates/section-form-right'
 import sectionFormFull from '../components/templates/section-form-full'
+import sectionParalax from '../components/templates/section-paralax'
+import sectionParalaxScroll from '../components/templates/section-paralax-scroll'
+import sectionCtaModel1 from '../components/templates/section-cta-model1'
+import sectionCtaModel2 from '../components/templates/section-cta-model2'
 
 // ==== BUTTONS ====
 import button_01 from '../components/shared/buttons/button-01'
@@ -42,6 +50,7 @@ import input_01 from '../components/shared/inputs/input-01'
 
 // ==== FOOTERS ====
 import footer from '../components/templates/footer'
+import footerSimple from '../components/templates/footer-simple'
 
 // ==== MODAL ====
 import Modal from '../components/shared/modal'
@@ -93,13 +102,21 @@ Vue.component('itens-col4-model3', itens_col4_model3)
 // Vue.component('itens-col4-partners', itens_col4_partners)
 Vue.component('section-left', sectionLeft)
 Vue.component('section-right', sectionRight)
-Vue.component('section-left-itens', sectionLeft_Itens)
-Vue.component('section-right-itens', sectionRight_Itens)
+Vue.component('section-left-itens-model1', sectionLeft_Itens_Model1)
+Vue.component('section-left-itens-model2', sectionLeft_Itens_Model2)
+Vue.component('section-left-itens-model3', sectionLeft_Itens_Model3)
+Vue.component('section-right-itens-model1', sectionRight_Itens_Model1)
+Vue.component('section-right-itens-model2', sectionRight_Itens_Model2)
+Vue.component('section-right-itens-model3', sectionRight_Itens_Model3)
 Vue.component('section-top', sectionTop)
 Vue.component('section-full', sectionFull)
 Vue.component('section-form-left', sectionFormLeft)
 Vue.component('section-form-right', sectionFormRight)
 Vue.component('section-form-full', sectionFormFull)
+Vue.component('section-paralax', sectionParalax)
+Vue.component('section-paralax-scroll', sectionParalaxScroll)
+Vue.component('section-cta-model1', sectionCtaModel1)
+Vue.component('section-cta-model2', sectionCtaModel2)
 
 Vue.component('slideshow-01', slideshow)
 Vue.component('slideshow-02', slideshow_02)
