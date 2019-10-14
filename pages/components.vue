@@ -22,6 +22,9 @@
       div.division#itens-col3-model3 
         h3 itens-col3-model3
         itens-col3-model3
+      div.division#itens-col3-model4 
+        h3 itens-col3-model4
+        itens-col3-model4
       div.division#itens-col4-model1 
         h3 itens-col4-model1
         itens-col4-model1
@@ -31,6 +34,9 @@
       div.division#itens-col4-model3 
         h3 itens-col4-model3
         itens-col4-model3
+      div.division#title-section
+        h3 title-section 
+        title-section( title="Services" description="será revertido para impulsionar")
       div.division#section-top 
         h3 Section-Top
         section-top(:images="require('../assets/img/vue.png')")
@@ -46,9 +52,27 @@
           buttonText="Saiba mais"
           linkSaiba="#"
         )
-      div.division#section-right-itens
-        h3 Section-Right-Itens
-        section-right-itens(
+      div.division#section-right-itens-model1
+        h3 Section-Right-Itens-model1
+        section-right-itens-model1(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
+      div.division#section-right-itens-model2
+        h3 Section-Right-Itens-model2
+        section-right-itens-model2(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
+      div.division#section-right-itens-model3
+        h3 Section-Right-Itens-model3
+        section-right-itens-model3(
           :images="require('../assets/img/vue.png')"
           title="Comprando Symma você se torna parte da Etherdam!"
           describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
@@ -64,9 +88,36 @@
           buttonText="Saiba mais"
           linkSaiba="#"
         )
-      div.division#section-left-itens
-        h3 Section-Left-Itens
-        section-left-itens(
+      div.division#section-left-02
+        h3 Section-Left-02
+        section-left-02(
+          :images="require('../assets/img/agency/face.jpg')"
+          title="We're a digital agency."
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
+      div.division#section-left-itens-model1
+        h3 Section-Left-Itens-Model1
+        section-left-itens-model1(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
+      div.division#section-left-itens-model2
+        h3 Section-Left-Itens-model2
+        section-left-itens-model2(
+          :images="require('../assets/img/vue.png')"
+          title="Comprando Symma você se torna parte da Etherdam!"
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
+      div.division#section-left-itens-model3
+        h3 Section-Left-Itens-model3
+        section-left-itens-model3(
           :images="require('../assets/img/vue.png')"
           title="Comprando Symma você se torna parte da Etherdam!"
           describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
@@ -97,16 +148,16 @@
           :fields="[{ value: '', valid: true, label: 'Teste do form', type: 'text', id: 'txt_teste' }]"
           buttonText="Enviar"
         )
-      div.division#slideshow-01
-        slideshow-01( 
-          :itemsToShow="1"
-          :autoPlay="true"
-          :autoPlaySpeed="5000"
-          :progressBar="true"
-          :pagination="true"
-          :navigation="true"
-          :transitionSpeed="900"
-          :contentSlide="images")
+      //- div.division#slideshow-01
+      //-   slideshow-01( 
+      //-     :itemsToShow="1"
+      //-     :autoPlay="true"
+      //-     :autoPlaySpeed="5000"
+      //-     :progressBar="true"
+      //-     :pagination="true"
+      //-     :navigation="true"
+      //-     :transitionSpeed="900"
+      //-     :contentSlide="images")
       div.division#slider-02
         h3 Slidershow
         slideshow-02.slide(
