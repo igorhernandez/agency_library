@@ -25,6 +25,9 @@
       div.division#itens-col3-model4 
         h3 itens-col3-model4
         itens-col3-model4
+      div.division#itens-col3-model5 
+        h3 itens-col3-model5
+        itens-col3-model5
       div.division#itens-col4-model1 
         h3 itens-col4-model1
         itens-col4-model1
@@ -34,6 +37,9 @@
       div.division#itens-col4-model3 
         h3 itens-col4-model3
         itens-col4-model3
+      div.division#portfolio-images 
+        h3 portfolio-images
+        portfolio-images
       div.division#title-section
         h3 title-section 
         title-section( title="Services" description="será revertido para impulsionar")

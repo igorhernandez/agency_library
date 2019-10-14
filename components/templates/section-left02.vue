@@ -52,7 +52,7 @@ export default {
         margin: auto
         align-items: center
         padding: 100px
-        background-image: url(/_nuxt/assets/img/agency/face.jpg)
+        background-image: url('../../assets/img/agency/face.jpg')
         background-size: cover
         background-repeat: no-repeat
         background-position: right

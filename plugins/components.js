@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
 // ==== ITENS ====
 import itens_col2_model1 from '../components/templates/itens-col2-model1'
@@ -11,10 +11,12 @@ import itens_col3_model1 from '../components/templates/itens-col3-model1'
 import itens_col3_model2 from '../components/templates/itens-col3-model2'
 import itens_col3_model3 from '../components/templates/itens-col3-model3'
 import itens_col3_model4 from '../components/templates/itens-col3-model4'
+import itens_col3_model5 from '../components/templates/itens-col3-model5'
 // import itens_col3_partners from '../components/templates/itens-col3-partners'
 import itens_col4_model1 from '../components/templates/itens-col4-model1'
 import itens_col4_model2 from '../components/templates/itens-col4-model2'
 import itens_col4_model3 from '../components/templates/itens-col4-model3'
+import itens_services from '../components/shared/itens-services'
 // import itens_col4_partners from '../components/templates/itens-col4-partners'
 
 // ==== SECTIONS ====
@@ -37,6 +39,7 @@ import sectionParalaxScroll from '../components/templates/section-paralax-scroll
 import sectionCtaModel1 from '../components/templates/section-cta-model1'
 import sectionCtaModel2 from '../components/templates/section-cta-model2'
 import titleSection from '../components/templates/title-section'
+import portfolioImages from '../components/templates/portfolio-images'
 
 // ==== BUTTONS ====
 import button_01 from '../components/shared/buttons/button-01'
@@ -90,7 +93,7 @@ import {
   Navigation as HooperNavigation
   } from 'hooper'
 
-library.add(faUserSecret)
+library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('hooper', Hooper)
 Vue.component('slide', Slide)
@@ -107,10 +110,12 @@ Vue.component('itens-col3-model1', itens_col3_model1)
 Vue.component('itens-col3-model2', itens_col3_model2)
 Vue.component('itens-col3-model3', itens_col3_model3)
 Vue.component('itens-col3-model4', itens_col3_model4)
+Vue.component('itens-col3-model5', itens_col3_model5)
 // Vue.component('itens-col3-partners', itens_col3_partners)
 Vue.component('itens-col4-model1', itens_col4_model1)
 Vue.component('itens-col4-model2', itens_col4_model2)
 Vue.component('itens-col4-model3', itens_col4_model3)
+Vue.component('itens-services', itens_services)
 // Vue.component('itens-col4-partners', itens_col4_partners)
 Vue.component('title-section', titleSection)
 Vue.component('section-left', sectionLeft)
@@ -131,6 +136,7 @@ Vue.component('section-paralax', sectionParalax)
 Vue.component('section-paralax-scroll', sectionParalaxScroll)
 Vue.component('section-cta-model1', sectionCtaModel1)
 Vue.component('section-cta-model2', sectionCtaModel2)
+Vue.component('portfolio-images', portfolioImages)
 
 Vue.component('slideshow-01', slideshow)
 Vue.component('slideshow-02', slideshow_02)

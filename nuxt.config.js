@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   styleResources: { // Style
     scss: [
@@ -33,7 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/components.js',
+    '~/plugins/components.js'
   ],
   /*
   ** Nuxt.js dev-modules
