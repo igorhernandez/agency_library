@@ -39,6 +39,7 @@ import sectionParalaxScroll from '../components/templates/section-paralax-scroll
 import sectionCtaModel1 from '../components/templates/section-cta-model1'
 import sectionCtaModel2 from '../components/templates/section-cta-model2'
 import titleSection from '../components/templates/title-section'
+import titleSection_02 from '../components/templates/title-section-02'
 import portfolioImages from '../components/templates/portfolio-images'
 
 // ==== BUTTONS ====
@@ -118,6 +119,7 @@ Vue.component('itens-col4-model3', itens_col4_model3)
 Vue.component('itens-services', itens_services)
 // Vue.component('itens-col4-partners', itens_col4_partners)
 Vue.component('title-section', titleSection)
+Vue.component('title-section-02', titleSection_02)
 Vue.component('section-left', sectionLeft)
 Vue.component('section-left-02', sectionLeft02)
 Vue.component('section-right', sectionRight)
