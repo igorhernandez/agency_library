@@ -18,6 +18,24 @@ export default {
         },
         {
           "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+        },
+        {
+          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
         }
       ]
     }
@@ -38,6 +56,8 @@ export default {
       height: 100%
       width: 100%
       max-width: 500px
+      min-height: 500px
+      cursor: pointer
       .title-section
         opacity: 0
         transition: .8s
