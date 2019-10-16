@@ -50,7 +50,7 @@ export default {
   .about-box
     display: grid
     grid-template-columns: 70% auto
-    grid-gap: 10px
+    grid-gap: 20px
     height: 600px
     .content 
       height: 100%
@@ -61,11 +61,11 @@ export default {
         position: absolute
         height: 100% 
         width: 100%
-        background-image: linear-gradient(45deg, $red, $whiteFade)
+        background-image: linear-gradient(45deg, $blackfade01, $whiteFade)
         transition: 1s all
-        opacity: 0
+        opacity: 1
         &:hover 
-          opacity: 1
+          opacity: 0
       figure 
         margin: 0
         height: 100%
@@ -81,7 +81,7 @@ export default {
         text-shadow: 2px 2px 3px $blackfade01
         color: $white
         &:hover + .gradient
-          opacity: 1
+          opacity: 0
       h3, span 
         font-family: $font
       h3
