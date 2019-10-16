@@ -61,7 +61,7 @@ export default {
         position: absolute
         height: 100% 
         width: 100%
-        background-image: linear-gradient(45deg, $blackfade01, $whiteFade)
+        background-image: linear-gradient(45deg, $blackfade02, $whiteFade)
         transition: 1s all
         opacity: 1
         &:hover 
