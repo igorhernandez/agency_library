@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.container
+  div.title
     span.divide
     h2 {{title}}.
     p {{description}}
@@ -25,14 +25,15 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .container 
-    padding: 50px
+  .title 
+    padding-bottom: 50px
     .divide 
       display: block
       width: 30px
       border-top: 3px solid $hoverRed 
       margin-bottom: 20px
     h2,p 
+      font-family: $font
       margin: 0
     h2 
       font-size: 2.5em

@@ -16,6 +16,6 @@ export default {
 <style lang="sass" scoped>
   .itens
     display: grid
-    grid-gap: 10px
+    grid-gap: 20px
     grid-template-columns: auto auto auto 
 </style>

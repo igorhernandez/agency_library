@@ -41,6 +41,8 @@ import sectionCtaModel2 from '../components/templates/section-cta-model2'
 import titleSection from '../components/templates/title-section'
 import titleSection_02 from '../components/templates/title-section-02'
 import portfolioImages from '../components/templates/portfolio-images'
+import about_01 from '../components/templates/about-01'
+import about_02 from '../components/templates/about-02'
 
 // ==== BUTTONS ====
 import button_01 from '../components/shared/buttons/button-01'
@@ -139,6 +141,8 @@ Vue.component('section-paralax-scroll', sectionParalaxScroll)
 Vue.component('section-cta-model1', sectionCtaModel1)
 Vue.component('section-cta-model2', sectionCtaModel2)
 Vue.component('portfolio-images', portfolioImages)
+Vue.component('about-01', about_01)
+Vue.component('about-02', about_02)
 
 Vue.component('slideshow-01', slideshow)
 Vue.component('slideshow-02', slideshow_02)

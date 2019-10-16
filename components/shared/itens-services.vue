@@ -19,14 +19,16 @@ export default {
 
 <style lang="sass" scoped>
   .contain 
-    background-color: $bgGray
+    background-color: $gray
     color: $white
-    padding: 20px
+    padding: 10px 20px
     display: grid
     align-items: center
     grid-template-columns: auto 20px
+    transition: 0.8s all
     &:hover 
       background-color: $hoverRed
-      transition: 0.8s
       cursor: pointer
+    h3 
+      font-family: $font
 </style>

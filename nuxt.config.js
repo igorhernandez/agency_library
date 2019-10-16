@@ -57,5 +57,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  server: {
+    port: 8000
   }
 }

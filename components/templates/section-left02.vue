@@ -45,14 +45,12 @@ export default {
 
 <style lang="sass" scoped>
     .container
-        background-color: $black
         font-family: $font
     .section-03
-        max-width: 1024px
+        max-width: 1200px
         margin: auto
         align-items: center
         padding: 100px
-        background-image: url('../../assets/img/agency/face.jpg')
         background-size: cover
         background-repeat: no-repeat
         background-position: right
@@ -69,7 +67,7 @@ export default {
             flex-direction: column
 
         section
-          max-width: 400px
+          max-width: 600px
           @media screen and ( max-width: 989px)
             padding: 15px
           h2
@@ -77,9 +75,9 @@ export default {
             color: $white
             line-height: 1.4em
             @media screen and ( min-width: 990px )
-              font-size: 3em
+              font-size: 4em
             @media screen and ( max-width: 989px )
-              font-size: 2.4em  
+              font-size: 3em  
 
           p
             margin: 30px 0

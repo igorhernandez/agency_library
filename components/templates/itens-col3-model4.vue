@@ -68,7 +68,7 @@ export default {
     margin-top: 40px
     margin-bottom: 40px
     display: grid
-    grid-gap: 10px
+    grid-gap: 20px
     grid-template-columns: auto auto auto
     @media screen and ( max-width: 585px )
         flex-direction: column

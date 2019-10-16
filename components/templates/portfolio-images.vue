@@ -14,28 +14,19 @@ export default {
           "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
         },
         {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+          "background-image": `url(${require('../../assets/img/agency/dev_02.jpg')})`
         },
         {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+          "background-image": `url(${require('../../assets/img/agency/dev_03.jpg')})`
         },
         {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+          "background-image": `url(${require('../../assets/img/agency/face.jpg')})`
         },
         {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+          "background-image": `url(${require('../../assets/img/agency/plan.jpg')})`
         },
         {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
-        },
-        {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
-        },
-        {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
-        },
-        {
-          "background-image": `url(${require('../../assets/img/agency/dev.jpg')})`
+          "background-image": `url(${require('../../assets/img/agency/video.jpg')})`
         }
       ]
     }
@@ -56,18 +47,19 @@ export default {
       height: 100%
       width: 100%
       max-width: 500px
-      min-height: 500px
+      min-height: 350px
       cursor: pointer
+      filter: grayscale(100%)
       .title-section
         opacity: 0
-        transition: .8s
+        transition: .8s all
         position: relative
-        top: 300px
+        top: 100px
       .content 
         opacity: 0
         background-color: $blackfade02
         height: 100%
-        transition: .8s
+        transition: .8s all
         h3
           display: block
           color: $white

@@ -1,10 +1,10 @@
 <template lang="pug">
     div.card(:style="`text-align: ${textAlign}; align-items: ${alignItems}`")
-        font-awesome-icon.fontawesome(icon="user-secret")
-        h2(v-if="hasTitle") {{title}}
-        span.divide
-        p(v-if="hasDesc") {{description}}
-        button-01( v-if="hasButton" :link="link" :interno="true" :text="linkText" class="btn")
+      font-awesome-icon.fontawesome(icon="user-secret")
+      h2(v-if="hasTitle") {{title}}
+      span.divide
+      p(v-if="hasDesc") {{description}}
+      button-01( v-if="hasButton" :link="link" :interno="true" :text="linkText" class="btn")
 
 </template>
 <script>
@@ -91,41 +91,40 @@ export default {
 
 <style lang="sass" scoped>
     .card
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 50px
-        margin: auto
-        background-color: $bgGray
-        color: $white
-        // max-width: 242px
-        // height: 355px
-        &:hover 
-          background-color: $hoverRed
-          transition: 0.6s
-          .fontawesome 
-            color: $white
-          .divide 
-            border-top: 3px solid $white 
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 40px
+      padding-bottom: 100px
+      padding-top: 70px
+      margin: auto
+      background-color: $gray
+      color: $white
+      transition: 0.6s all
+      &:hover 
+        background-color: $hoverRed
         .fontawesome 
-          margin-bottom: 20px
-          color: $hoverRed
-        figure
-            margin: 0px
-            img
-                width: 100%
-        p
-          font-weight: 100
-          font-size: 1em
-          line-height: 25px
+          color: $white
+        .divide 
+          border-top: 3px solid $white 
+      .fontawesome 
+        margin-bottom: 50px
+        color: $hoverRed
+      figure
+          margin: 0px
+          img
+              width: 100%
+      p
+        font-weight: 100
+        font-size: 1em
+        line-height: 25px
 
-        a
-          text-decoration: none
+      a
+        text-decoration: none
 
-        h2
-          font-size: 24px
-          margin-bottom: 0
-
+      h2
+        font-size: 24px
+        margin-bottom: 0
     .btn
       background-color: transparent
       color: #136aaa

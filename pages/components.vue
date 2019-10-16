@@ -40,6 +40,12 @@
       div.division#portfolio-images 
         h3 portfolio-images
         portfolio-images
+      div.division#about-01 
+        h3 about-01
+        about-01
+      div.division#about-02 
+        h3 about-02
+        about-02
       div.division#title-section
         h3 title-section 
         title-section( title="Services" description="será revertido para impulsionar")
@@ -209,7 +215,7 @@
 <style lang="sass" scoped>
   .components 
     display: grid
-    background-color: $gray
+    background-color: $gray02
     grid-template-columns: 175px auto
     font-family: $font
     .nav-comp 

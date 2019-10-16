@@ -45,7 +45,7 @@
   .nav-components 
     height: 100%
     width: 100%
-    background-color: $bgBlue 
+    background-color: $darkRed 
     .fixed-comp 
       height: 100vh
       overflow: auto
@@ -58,5 +58,5 @@
       padding: 10px 25px
       font-size: 0.8rem
       &:hover 
-        background-color: $hoverBlue
+        background-color: $hoverRed
 </style>

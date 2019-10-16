@@ -34,6 +34,7 @@ export default {
       margin-bottom: 20px
     h2,p 
       margin: 0
+      font-family: $font
     h2 
       font-size: 2.5em
       color: $white
