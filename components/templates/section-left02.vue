@@ -47,10 +47,7 @@ export default {
     .container
         font-family: $font
     .section-03
-        max-width: 1200px
-        margin: auto
         align-items: center
-        padding: 100px
         background-size: cover
         background-repeat: no-repeat
         background-position: right

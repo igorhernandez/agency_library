@@ -2,12 +2,13 @@
   div.main
     menu-01(:menus="menus")
     section.banner
-      section-left-02(
-        title="We're a digital agency."
-        describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
-        buttonText="Saiba mais"
-        linkSaiba="#"
-      )
+      div.limit
+        section-left-02(
+          title="We're a digital agency."
+          describe="A Symma trará o primeiro banco mundial de ether, 50% de seu investimento será revertido para impulsionar a usabilidade da moeda, possibilitando futuramente até mesmo saques e investimentos em start-ups!"
+          buttonText="Saiba mais"
+          linkSaiba="#"
+        )
       div.limit
         itens-col3-model4
     div.pd-50.linefix
@@ -31,6 +32,7 @@
     div.pd-50
       div.line
     footer-02
+    footer-03
 </template>
 
 <script>
@@ -47,6 +49,7 @@ export default {
   .main 
     background-color: $bgGray
     min-height: 100vh
+    padding-top: 90px
     .line 
       height: 50px
       width: 1px
@@ -57,8 +60,8 @@ export default {
       background-size: cover
       background-position: top
       background-attachment: fixed
-    .limit, header, .head-footer
-      max-width: 1200px
+    .limit, header, .head-footer, footer .content-footer 
+      max-width: 1024px
       margin: auto
     h2 
       color: $white
@@ -68,8 +71,10 @@ export default {
       padding-top: 0px
       margin-top: -60px
     .section-03 
-      padding-top: 200px
+      padding: 100px 0px
     #menu .menu-desk li
       &:hover 
         border-bottom: 1px solid $hoverRed
+    .btn 
+      padding: 15px 30px
 </style>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 // ==== ITENS ====
 import itens_col2_model1 from '../components/templates/itens-col2-model1'
@@ -64,6 +65,7 @@ import input_01 from '../components/shared/inputs/input-01'
 // ==== FOOTERS ====
 import footer from '../components/templates/footer'
 import footer_02 from '../components/templates/footer-02'
+import footer_03 from '../components/templates/footer-03'
 import footerSimple from '../components/templates/footer-simple'
 
 // ==== MODAL ====
@@ -98,6 +100,8 @@ import {
   } from 'hooper'
 
 library.add(fas)
+library.add(fab)
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('hooper', Hooper)
 Vue.component('slide', Slide)
@@ -155,6 +159,7 @@ Vue.component('button-04', button_04)
 Vue.component('menu-01', menu_01)
 Vue.component('footer-01', footer)
 Vue.component('footer-02', footer_02)
+Vue.component('footer-03', footer_03)
 Vue.component("tooltip", tooltip)
 Vue.component("loader-01", loader01)
 Vue.component("loader-02", loader02)

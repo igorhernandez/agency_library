@@ -26,11 +26,10 @@ export default {
         color: $white
         padding: 14px
         box-sizing: border-box
-        transition: 0.4s all
+        transition: 0.6s all
         cursor: pointer
         font-weight: bold
         &:hover
             background-color: $hoverRed 
-            transition: 0.8s
             transform: scale(1.1)
 </style>
