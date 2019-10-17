@@ -63,6 +63,7 @@ import input_01 from '../components/shared/inputs/input-01'
 
 // ==== FOOTERS ====
 import footer from '../components/templates/footer'
+import footer_02 from '../components/templates/footer-02'
 import footerSimple from '../components/templates/footer-simple'
 
 // ==== MODAL ====
@@ -153,6 +154,7 @@ Vue.component('button-03', button_03)
 Vue.component('button-04', button_04)
 Vue.component('menu-01', menu_01)
 Vue.component('footer-01', footer)
+Vue.component('footer-02', footer_02)
 Vue.component("tooltip", tooltip)
 Vue.component("loader-01", loader01)
 Vue.component("loader-02", loader02)

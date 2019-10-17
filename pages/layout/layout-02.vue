@@ -1,5 +1,6 @@
 <template lang="pug">
   div.main
+    menu-01(:menus="menus")
     section.banner
       section-left-02(
         title="We're a digital agency."
@@ -9,34 +10,66 @@
       )
       div.limit
         itens-col3-model4
-    section.pd-50.services
+    div.pd-50.linefix
+      div.line
+    section.services
       div.limit
         title-section( title="Services" description="será revertido para impulsionar")
         itens-col3-model5
-    section.pd-50
+    div.pd-50
+      div.line
+    section
       div.limit
         title-section( title="Works" description="será revertido para impulsionar")
         portfolio-images
-    section.pd-50
+    div.pd-50
+      div.line
+    section
       div.limit
         title-section( title="About" description="será revertido para impulsionar")
         about-02
+    div.pd-50
+      div.line
+    footer-02
 </template>
+
+<script>
+export default {
+  data(){
+    return {
+      menus: ['Home','Services','Works','About']
+    }
+  }
+}
+</script>
 
 <style lang="sass">
   .main 
     background-color: $bgGray
     min-height: 100vh
+    .line 
+      height: 50px
+      width: 1px
+      margin: auto
+      border-left: 2px solid $hoverRed
     .banner 
       background-image: url('../../assets/img/agency/face.jpg')
       background-size: cover
       background-position: top
       background-attachment: fixed
-    .limit
+    .limit, header, .head-footer
       max-width: 1200px
       margin: auto
     h2 
       color: $white
     .pd-50 
       padding: 100px 0
+    .linefix
+      padding-top: 0px
+      margin-top: -60px
+    .section-03 
+      padding-top: 200px
+    #menu .menu-desk li
+      &:hover 
+        border-bottom: 1px solid $hoverRed
 </style>

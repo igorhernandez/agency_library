@@ -1,19 +1,15 @@
 <template lang="pug">
     div( id="menu")
         header(id="header")
-            figure
-                nuxt-link( to="/")
-                    img(src="../../assets/img/vue.png" alt="Logotipo")
+            //- figure
+            //-     nuxt-link( to="/")
+            //-         img(src="../../assets/img/vue.png" alt="Logotipo")
+            nuxt-link( to="/") 
+                h2.logoname {{logoname}}
             nav
                 ul.menu-desk
-                    li
-                        span teste
-                    li 
-                        span teste
-                    li 
-                        span teste
-                    li 
-                        span teste
+                    li(v-for="menu in menus")
+                        span {{menu}}
                 transition(name="slide-fade")
                     ul.menu-mb
                         li
@@ -25,14 +21,8 @@
                                     path( fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z")
         transition(name="slide-fade")
             div.menu-mb-open(v-if="teste")
-                li
-                    span teste                        
-                li 
-                    span teste
-                li 
-                    span teste                    
-                li 
-                    span teste
+                li(v-for="menu in menus")
+                    span {{menu}}
 </template>
 
 <script>
@@ -46,6 +36,20 @@ export default {
     watch:{
         $route: function(){
             this.teste = false
+        }
+    },
+    props:{
+        logoname: {
+            type: String,
+            default: () => {
+                return 'Agency.'
+            }
+        },
+        menus:{
+            type: Array,
+            default: () => {
+                return ['Home','About']
+            }
         }
     }
 }
@@ -67,16 +71,17 @@ export default {
         top: 0
         z-index: 3
         width: 100%
-        background-color: $blue
-        box-shadow: 0px 0px 3px rgba($black, 0.2)
+        background-color: $blackfade02
+        box-shadow: 10px 0px 9px rgba($black, 0.9)
         header
-            background-color: $blue
+            background-color: $blackfade02
             width: 100%
             display: flex
             padding-right: 10px
             margin: auto
             justify-content: space-between
-           
+            .logoname
+                font-size: 2em
             figure 
                 display: flex
                 align-items: center
@@ -101,7 +106,6 @@ export default {
             align-content: center
             align-items: center
             width: 100%
-            text-transform: uppercase
         .menu-mb
             display: none
             li 
@@ -152,14 +156,13 @@ export default {
                 transition: 0.4s all
                 border-bottom: 1px solid transparent
                 &:hover
-                    border-bottom: 1px solid #f7f7f7
-                    transition: 0.4s all
+                    border-bottom: 1px solid $white
                 a
                     transition: 0.4s all
                     color: $white
                     
                     &:hover
-                        color: #f7f7f7
+                        color: $white
                 
                 &:nth-child(4)
                     a

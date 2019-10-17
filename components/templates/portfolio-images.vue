@@ -49,12 +49,10 @@ export default {
 
 <style lang="sass" scoped>
   .portfolios
-    height: 500px
     width: 100% 
     display: grid
     grid-template-columns: auto auto auto
     grid-gap: 20px
-    padding-bottom: 160px
     .image 
       width: 100%
       height: 100% 
